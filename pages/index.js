@@ -236,8 +236,8 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.linkToProjects}>
-          <Link href={"/Projects"}>
-            <a>Go to Projects</a>
+          <Link href="/Projects">
+            <a onClick={() => activeItem("Projects")}>Go to Projects</a>
           </Link>
         </div>
       </div>
