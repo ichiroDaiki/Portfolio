@@ -1,11 +1,23 @@
 import "../styles/globals.css";
-import { MenuContextProvider } from "../context/MenuContext";
+import { QueryClient, QueryClientProvider } from "react-query";
 
 function MyApp({ Component, pageProps }) {
+  const queryClient = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+        refetchOnmount: false,
+        refetchOnReconnect: false,
+        retry: false,
+      },
+    },
+  });
+
   return (
-    <MenuContextProvider>
-      <Component {...pageProps} />
-    </MenuContextProvider>
+    <QueryClientProvider client={queryClient}>
+        <Component {...pageProps} />
+    </QueryClientProvider>
+
   );
 }
 
