@@ -22,7 +22,10 @@ const GalleryItem = () => {
     {data.data.map((projects, key) => (
         <div className={styles.galleryItem} key={key} >
           <div className={styles.galleryImg}>
-            <Image src={"/assetsProjects/" + projects.gallery_name + ".webp"} objectFit='contain' layout="fill" alt="instagram" />
+            <Image src={"/assetsProjects/" + projects.gallery_name + ".webp"}         
+                layout="intrinsic"
+                width={500}
+                height={300} alt="instagram"/>
           </div>
           <div className={styles.subGalleryItem}>
             <div className={styles.galleryTitle}>
