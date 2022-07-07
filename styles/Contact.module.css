@@ -1,0 +1,304 @@
+.formDiv {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  margin-top: 30px;
+  width: 40%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  color: #fff;
+}
+
+.formInput {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+.formInputT {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 10px;
+}
+
+.formInputT input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgb(134, 134, 134);
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgb(172, 172, 172);
+  padding-left: 10px;
+}
+
+.formInputT label {
+  font-weight: bold;
+}
+
+.formInputT textarea {
+  width: 100%;
+  height: 200px;
+  border: 1px solid rgb(134, 134, 134);
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgb(172, 172, 172);
+  padding-left: 10px;
+  padding-top: 10px;
+  resize: none;
+}
+
+.sendButton {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.sendButton button {
+  width: 100px;
+  height: 30px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid rgb(134, 134, 134);
+  color: #fff;
+}
+
+.contactInfo {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  color: #fff;
+}
+
+.contact h1 {
+  font-size: 50px;
+  line-height: 0%;
+}
+
+.contact p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+
+.contact {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+  
+
+.social {
+  width: 30%;
+  height: 82vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.email {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.email span {
+  color: #fff;
+  margin-left: 10px;
+}
+
+
+.red{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.blue{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 0;
+}
+
+.yellow{
+    width: 50%;
+}
+
+.yellow a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+}
+
+@media only screen and (min-width: 212px) {
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact{
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    line-height: 0;
+  }
+
+  .social{
+    width: 100%;
+    height: auto;
+  }
+
+  .blue{
+    width: 20%;
+  }
+
+  .yellow{
+    width: 60%;
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (min-width: 312px) {
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact{
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    line-height: 0;
+  }
+
+  .social{
+    width: 100%;
+    height: auto;
+  }
+
+  .blue{
+    width: 20%;
+  }
+
+  .yellow{
+    width: 70%;
+    flex-wrap: wrap;
+  }
+
+  .yellow a{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 370px) {
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact{
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    line-height: 0;
+  }
+
+  .social{
+    width: 100%;
+    height: auto;
+  }
+
+  .blue{
+    width: 20%;
+  }
+
+  .yellow{
+    width: 58%;
+    flex-wrap: wrap;
+  }
+
+  .yellow a{
+    font-size: 18px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact{
+    margin-top: 50px;
+    width: 100%;
+    height: 30vh;
+    line-height: 0;
+  }
+
+  .social{
+    width: 100%;
+    height: auto;
+  }
+
+  .blue{
+    width: 15%;
+  }
+
+  .yellow{
+    width: 30%;
+    flex-wrap: wrap;
+  }
+
+  .yellow a{
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (orientation: landscape){
+  .contactInfo{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact{
+    width: 30%;
+    height: 80vh;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  .social{
+    width: 32%;
+    height: 80vh;
+    display: flex;
+    align-content: flex-start;
+  }
+  
+}

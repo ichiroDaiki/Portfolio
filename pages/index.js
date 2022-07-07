@@ -9,9 +9,10 @@ export default function Home() {
     <Layout>
       <Head>
         <title>Inicio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Jostick Quiel Software Developer Portfolio"
+          content="Software Developer Portfolio"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
