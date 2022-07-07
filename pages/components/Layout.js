@@ -24,8 +24,6 @@ const Layout = ({ children }) => {
     }
   },[router])
 
-  console.log("Menu: ", open)
-
 
   return (
     <div className={styles.container}>
