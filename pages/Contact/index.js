@@ -12,7 +12,7 @@ const Contact = () => {
       <div className={styles.contactInfo}>
         <div className={styles.contact}>
         <h1>Social</h1>
-        <p>I'm social, feel free to contact me.</p>
+        <p>Im social, feel free to contact me.</p>
         </div>
         <div className={styles.social}>
           <div className={styles.red}>
