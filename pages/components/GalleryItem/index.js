@@ -4,6 +4,7 @@ import styles from '../../../styles/galleryItem.module.css'
 import { useQuery } from "react-query";
 import { getProjects } from "../../api/Get";
 import Loading from "../Loading";
+import ErrorComponent from "../Error";
 
 const GalleryItem = () => {
 
@@ -14,7 +15,7 @@ const GalleryItem = () => {
   }
 
   if (status === "error") {
-    return <p>Error</p>;
+    return <ErrorComponent/>;
   }
 
   return (

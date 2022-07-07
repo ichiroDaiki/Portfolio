@@ -7,6 +7,26 @@ import { useRouter } from "next/router";
 const Layout = ({ children }) => {
   const router = useRouter();
 
+  const [open, setOpen] = useState(false)
+  const openMenu = () =>{
+    setOpen(!open)
+  }
+
+  useEffect(()=>{
+    if(router.pathname == '/'){
+      setOpen(false)
+    }
+    if(router.pathname == '/Projects'){
+      setOpen(false)
+    }
+    if(router.pathname == '/Contact'){
+      setOpen(false)
+    }
+  },[router])
+
+  console.log("Menu: ", open)
+
+
   return (
     <div className={styles.container}>
       <nav className="navbar">
@@ -41,14 +61,26 @@ const Layout = ({ children }) => {
           </Link>
         </ul>
       </nav>
-      <div className="burger">
-        <div id="allBurger">
+      <div className={`burger  ${open ? 'backgroundburger' : ''} `}>
+        <div id="allBurger" onClick={()=>openMenu()}>
           <div className="burgerLine"></div>
           <div className="burgerLine"></div>
           <div className="burgerLine"></div>
         </div>
-        <div className="burgerMenu">
-          <div className="menu"></div>
+        <div className={open ? 'burgerMenu' : 'disabled'}>
+          <div className={open ? 'menu backgroundburger' : 'disabled'}>
+            <ul className={open ? 'menu' : 'disabled'}>
+              <Link href="/">
+                <a>Home</a>
+              </Link>
+              <Link href="/Projects">
+                <a>Projects</a>
+              </Link>
+              <Link href="/Contact">
+                <a>Contact</a>
+              </Link>
+            </ul>
+          </div>
         </div>
       </div>
       {children}

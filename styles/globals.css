@@ -18,6 +18,8 @@ body {
   box-sizing: border-box;
 }
 
+
+
 @media only screen and (min-width: 212px) {
   .navbar {
     display: none;
@@ -34,6 +36,9 @@ body {
   }
 
   .burgerLine {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 20px;
     height: 3px;
     background-color: rgb(255, 255, 255);
@@ -48,6 +53,7 @@ body {
   }
 
   .burger {
+    position: fixed;
     display: block;
     width: 100%;
     height: 60px;
@@ -64,10 +70,45 @@ body {
     margin-top: 3px;
     margin-right: 20px;
   }
+
+  .burgerMenu{
+    display: block;
+    width: 100%;
+  }
+
+  .menu{
+    margin-top: 20px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-color: #111;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu ul{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .menu a{
+    margin-bottom: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
   .burger {
+    display: none;
+  }
+
+  .burgerMenu{
     display: none;
   }
 
@@ -185,4 +226,13 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(15, 25, 34);
+}
+
+.disabled{
+  display: none;
+}
+
+.backgroundburger{
+  background-color: #111;
+  z-index: 99999;
 }
