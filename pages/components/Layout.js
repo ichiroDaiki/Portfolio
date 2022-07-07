@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import styles from "./layout.module.css";
-import { useMenu } from "../../context/MenuContext";
 import { useRouter } from "next/router";
 
 const Layout = ({ children }) => {

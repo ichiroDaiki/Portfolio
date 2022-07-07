@@ -30,7 +30,7 @@ const GalleryItem = () => {
           </div>
           <div className={styles.subGalleryItem}>
             <div className={styles.galleryTitle}>
-              <h1>{projects.title} <Link href={"Projects/" + projects.id}><span className={styles.link}>⛺</span></Link></h1>
+              <h1>{projects.title} <Link href={'#'}><span className={styles.link}>⛺</span></Link></h1>
               <p>{projects.body}</p>
             </div>
             <div className={styles.divider}></div>
