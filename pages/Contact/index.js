@@ -53,8 +53,8 @@ const Contact = () => {
             </Link>
             </div>
             <div className={styles.yellow}>
-              <Link href="https://twitter.com/JostickOmar">
-                <a target="_blank">@JostickOmar</a>
+              <Link href="https://twitter.com/JostickQuiel_">
+                <a target="_blank">@JostickQuiel_</a>
               </Link>
             </div>
           </div>
